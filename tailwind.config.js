@@ -20,6 +20,9 @@ export default {
                     'blue': '#3700FF',    
                     'purple': '#9700E2',  
                     'pink': '#FF2ABD'     
+                },
+                dark: {
+                    'primary': '#575757'
                 }
             },
             backgroundImage: {

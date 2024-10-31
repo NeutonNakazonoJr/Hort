@@ -71,7 +71,7 @@ export const ToastProvider = ({ children }: ToastProviderProps) => {
                     }
                 `}
             </style>
-            <div className="fixed top-4 right-4 z-50 flex flex-col gap-2">
+            <div className="fixed top-4 right-4 z-50 flex flex-col gap-2 max-w-80">
                 {toasts.map((toast) => (
                     <div
                         key={toast.id}

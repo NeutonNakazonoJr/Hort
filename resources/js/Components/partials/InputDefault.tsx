@@ -45,10 +45,10 @@ const InputDefault = forwardRef<HTMLInputElement, InputProps>(({
                 className={`
                     w-full
                     border
-                    border-gradient-blue
-                    focus:border-gradient-blue
+                    border-zinc-500
+                    focus:border-teal-700
                     focus:ring-2
-                    focus:ring-gradborder-gradient-blue
+                    focus:ring-teal-700
                     focus:ring-opacity-50
                     focus:outline-none
                     transition-colors

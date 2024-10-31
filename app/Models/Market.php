@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Market extends Model
 {
@@ -12,6 +13,16 @@ class Market extends Model
 
     protected $fillable = [
         'name',
-        'initials'
+        'nickname'
     ];
+
+    /**
+     * Get the marketAddress associated with the Market
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function marketAddress(): HasOne
+    {
+        return $this->hasOne(MarketAddress::class);
+    }
 }

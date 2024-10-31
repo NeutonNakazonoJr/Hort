@@ -50,7 +50,7 @@ export const FormField = forwardRef<HTMLInputElement, FormFieldProps>(
         ...props 
     }, ref) => {
         return (
-            <div className={wrapperClassName}>
+            <div className={'text-dark-primary font-medium ' + wrapperClassName}>
                 {label && (
                     <label className={labelClassName}>
                         {label}
